@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_settings"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimaryDark">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_bar_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <TextView
+                   android:id="@+id/Close_settings"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Close"
+                   android:textSize="18dp"
+                   android:textStyle="bold"
+                   android:textColor="@android:color/white"
+                   android:layout_alignParentStart="true"
+                   />
+               <TextView
+                   android:id="@+id/Update_settings"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Update"
+                   android:textSize="18dp"
+                   android:layout_marginRight="10dp"
+                   android:textStyle="bold"
+                   android:textColor="@android:color/white"
+                   android:layout_alignParentEnd="true"
+                   />
+
+           </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Setting_profile_img"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/user"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/app_bar_settings"
+        />
+    <TextView
+        android:id="@+id/Update_User_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change profile"
+        android:textSize="23dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_below="@id/Setting_profile_img"
+        />
+    <EditText
+        android:id="@+id/Setting_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/Update_User_name"
+        android:background="@drawable/edit_text"
+        android:padding="10dp"
+        android:hint="User Name"
+        />
+    <EditText
+        android:id="@+id/Setting_Full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text"
+        android:padding="10dp"
+        android:layout_below="@+id/Setting_user_name"
+        android:hint="Full Name"
+        />
+    <EditText
+        android:id="@+id/Setting_Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="@drawable/edit_text"
+        android:layout_below="@+id/Setting_Full_name"
+        android:hint="Address"
+        />
+
+</RelativeLayout>

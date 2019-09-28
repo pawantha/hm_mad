@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin_product_deleteActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/Amd1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:id="@+id/text_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update and Delete Products"
+            android:textSize="20dp"
+            android:layout_margin="15dp"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"/>
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/Update_pro_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Amd1"
+        android:background="@drawable/edit_text"
+        android:text="Product Name"
+        android:padding="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        />
+    <EditText
+        android:id="@+id/Update_pro_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Update_pro_name"
+        android:background="@drawable/edit_text"
+        android:text="Product Price"
+        android:padding="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:id="@+id/Update_pro_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Update_pro_price"
+        android:background="@drawable/edit_text"
+        android:text="Product Details"
+        android:padding="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        />
+    <Button
+        android:id="@+id/Update_pro_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Data"
+        android:background="@drawable/buttons"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/Update_pro_details"
+        />
+    <Button
+        android:id="@+id/Update_pro_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Data"
+        android:background="@drawable/buttons"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/Update_pro_update"
+        />
+    <Button
+        android:id="@+id/Update_pro_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:background="@drawable/buttons"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/Update_pro_delete"
+        />
+    </RelativeLayout>
+
+</ScrollView>
